@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Raj PG Services in Indore. Book a visit, send an enquiry, or call +91 79878 03551. PG accommodation near Pardesipura and Aurobindo Hospital.">
+  <title>Contact Us | Raj PG Services Indore</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ─── NAVBAR ─────────────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">R</div>
+        <div class="nav-logo-text">
+          <span>Raj PG Services</span>
+          <span>Indore, M.P.</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html">Browse Rooms</a></li>
+        <li><a href="detail.html">Room Detail</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="listings.html">Browse Rooms</a>
+    <a href="detail.html">Room Detail</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <!-- ─── PAGE BANNER ──────────────────────────── -->
+  <section class="page-banner">
+    <div class="container">
+      <div class="page-banner-content">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <span>Contact Us</span>
+        </div>
+        <h1>Get In Touch</h1>
+        <p>Book a free visit or send us your enquiry — we respond within 2 hours!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT CONTENT ──────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- LEFT: Enquiry Form -->
+        <div>
+          <div class="contact-form-card">
+            <h3>📋 Room Enquiry Form</h3>
+            <p>Fill in your details below and we'll get back to you within 2 hours with available room options.</p>
+
+            <!-- Success Message -->
+            <div class="success-message" id="success-message">
+              <div class="success-icon">✅</div>
+              <h3>Enquiry Sent Successfully!</h3>
+              <p>Thank you! We've received your enquiry and will contact you within 2 hours on the phone number or email you provided.</p>
+              <br>
+              <p style="font-size:0.88rem; color:var(--text-light);">You can also reach us directly:<br>
+                <a href="tel:+919826705696" style="color:var(--accent); font-weight:700;">📞 +91 9826705696</a>
+              </p>
+              <br>
+              <button class="btn btn-outline" id="send-another">Send Another Enquiry</button>
+            </div>
+
+            <!-- Form -->
+            <form id="enquiry-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name <span class="required">*</span></label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="e.g. Raj Sharma" autocomplete="name">
+                  <span class="field-error" id="name-error">Please enter your full name (min. 2 characters).</span>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address <span class="required">*</span></label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="e.g. xyz@gmail.com" autocomplete="email">
+                  <span class="field-error" id="email-error">Please enter a valid email address.</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone Number <span class="required">*</span></label>
+                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="e.g. 9876543210" autocomplete="tel">
+                  <span class="field-error" id="phone-error">Please enter a valid 10-digit Indian mobile number.</span>
+                </div>
+                <div class="form-group">
+                  <label for="location">Preferred Location <span class="required">*</span></label>
+                  <select class="form-control" id="location" name="location">
+                    <option value="">— Select Location —</option>
+                    <option value="Plot 97/4, Ganesh Nagar, Pardesipura Area, Indore">Plot 97/4, Ganesh Nagar, Pardesipura</option>
+                    <option value="Plot 103/4, Ganesh Nagar, Pardesipura Area, Indore">Plot 103/4, Ganesh Nagar, Pardesipura</option>
+                    <option value="Plot 259, Lemon City, Paliya, Near Aurobindo Hospital, Indore">Plot 259, Near Aurobindo Hospital</option>
+                    <option value="Any">Any Location</option>
+                  </select>
+                  <span class="field-error" id="location-error">Please select a preferred location.</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="room-type">Room Type <span class="required">*</span></label>
+                  <select class="form-control" id="room-type" name="room-type">
+                    <option value="">— Select Type —</option>
+                    <option value="Single">Single Occupancy — ₹3,500/month</option>
+                    <option value="Double">Double Occupancy — ₹3,200/month</option>
+                    <option value="Triple">Triple Sharing — ₹2,800/month</option>
+                    <option value="Budget">Budget Triple — ₹2,500/month</option>
+                  </select>
+                  <span class="field-error" id="room-type-error">Please select a room type.</span>
+                </div>
+                <div class="form-group">
+                  <label for="movein-date">Preferred Move-in Date</label>
+                  <input type="date" class="form-control" id="movein-date" name="movein-date">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message (Optional)</label>
+                <textarea class="form-control" id="message" name="message" placeholder="Any special requirements, questions, or details about your stay..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" style="margin-top:0.5rem;">
+                📩 Submit Enquiry
+              </button>
+
+              <p style="font-size:0.78rem; color:var(--text-light); margin-top:0.9rem; text-align:center;">
+                We respect your privacy. Your information is never shared with third parties.
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!-- RIGHT: Info + Maps -->
+        <div>
+
+          <!-- Contact Info Card -->
+          <div class="contact-info-card">
+            <h3>📬 Contact Information</h3>
+
+            <div class="contact-info-item">
+              <div class="info-icon">📞</div>
+              <div class="info-text">
+                <strong>Phone / WhatsApp</strong>
+                <a href="tel:+919826705696">+91 9826705696</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="info-icon">📧</div>
+              <div class="info-text">
+                <strong>Email</strong>
+                <a href="mailto:rajatyadav25009@gmail.com">rajatyadav25009@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="info-icon">📸</div>
+              <div class="info-text">
+                <strong>Instagram</strong>
+                <a href="https://www.instagram.com/ydv_raj_0143" target="_blank" rel="noopener">@ydv_raj_0143</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="info-icon">📍</div>
+              <div class="info-text">
+                <strong>Location 1</strong>
+                <span>Plot 97/4, Ganesh Nagar, Pardesipura Area, Indore</span>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="info-icon">📍</div>
+              <div class="info-text">
+                <strong>Location 2</strong>
+                <span>Plot 103/4, Ganesh Nagar, Pardesipura Area, Indore</span>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="info-icon">📍</div>
+              <div class="info-text">
+                <strong>Location 3</strong>
+                <span>Plot 259, Lemon City, Paliya, Near Aurobindo Hospital, Indore</span>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="info-icon">⏰</div>
+              <div class="info-text">
+                <strong>Response Time</strong>
+                <span>We reply within 2 hours (9 AM – 9 PM daily)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map 1 -->
+          <div style="margin-bottom:1rem;">
+            <p style="font-size:0.82rem; font-weight:700; color:var(--text); margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:0.5px;">📍 Pardesipura (Plot 97/4 &amp; 103/4)</p>
+            <div class="map-placeholder">
+              <div class="map-icon">🗺️</div>
+              <p><strong>Ganesh Nagar, Pardesipura Area</strong><br>Plot 97/4 &amp; 103/4<br>Indore, Madhya Pradesh</p>
+            </div>
+          </div>
+
+          <!-- Map 2 -->
+          <div style="margin-bottom:1.5rem;">
+            <p style="font-size:0.82rem; font-weight:700; color:var(--text); margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:0.5px;">📍 Near Aurobindo Hospital (Plot 259)</p>
+            <div class="map-placeholder">
+              <div class="map-icon">🗺️</div>
+              <p><strong>Lemon City, Paliya</strong><br>Near Aurobindo Hospital<br>Indore, Madhya Pradesh</p>
+            </div>
+          </div>
+
+          <!-- Quick Response Note -->
+          <div class="quick-response-note">
+            <strong>⚡ Quick Response Guarantee</strong>
+            All enquiries are responded to within 2 hours during business hours (9 AM – 9 PM, 7 days a week). For urgent needs, please call directly on <a href="tel:+919826705696" style="color:var(--accent); font-weight:700;">+91 9826705696</a>.
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-logo">
+          <div class="logo-icon">R</div>
+          <div class="logo-text">
+            <span>Raj PG Services</span>
+            <span>Indore, Madhya Pradesh</span>
+          </div>
+        </div>
+        <p>Premium paying guest accommodation in Indore. Safe, clean, and fully furnished rooms at three prime locations near Pardesipura and Aurobindo Hospital.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/ydv_raj_0143" target="_blank" rel="noopener" title="Instagram">📸</a>
+          <a href="tel:+919826705696" title="Call Us">📞</a>
+          <a href="mailto:rajatyadav25009@gmail.com" title="Email Us">📧</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">🏠 Home</a></li>
+          <li><a href="listings.html">🛏 Browse Rooms</a></li>
+          <li><a href="detail.html">📋 Room Detail</a></li>
+          <li><a href="contact.html">📩 Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Locations</h4>
+        <ul>
+          <li><a href="listings.html">Plot 97/4, Ganesh Nagar, Pardesipura</a></li>
+          <li><a href="listings.html">Plot 103/4, Ganesh Nagar, Pardesipura</a></li>
+          <li><a href="listings.html">Plot 259, Lemon City, Near Aurobindo Hospital</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item">
+          <span class="icon">📞</span>
+          <div><a href="tel:+919826705696">+91 9826705696</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">📧</span>
+          <div><a href="mailto:rajatyadav25009@gmail.com">rajatyadav25009@gmail.com</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">📸</span>
+          <div><a href="https://www.instagram.com/ydv_raj_0143" target="_blank" rel="noopener">@ydv_raj_0143</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">💰</span>
+          <div><span>₹2,500 – ₹3,500/month<br><small>Electricity &amp; Water Included</small></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <span>© 2025 Raj PG Services, Indore. All rights reserved.</span>
+        <span>Made with ❤️ in Indore, M.P.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+  <script src="data/rooms.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
