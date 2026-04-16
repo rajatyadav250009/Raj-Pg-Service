@@ -10,7 +10,7 @@ const rooms = [
     reviews: 12,
     amenities: ["CCTV", "RO Water", "Parking", "Housekeeping", "Furnished", "Wi-Fi"],
     available: true,
-    image: "images/WhatsApp Image 2026-03-20 at 18.00.30 (1).jpeg",
+    image: "images/WhatsApp Image 2026-04-16 at 18.11.48 (1).jpeg",
     description: "A comfortable single-occupancy room with all modern amenities. Perfect for working professionals and students who value privacy and comfort. The room is fully furnished with a bed, wardrobe, study table, and chair."
   },
   {
@@ -66,7 +66,7 @@ const rooms = [
     reviews: 8,
     amenities: ["CCTV", "RO Water", "Parking", "Housekeeping", "Furnished", "Wi-Fi"],
     available: true,
-    image: "images/WhatsApp Image 2026-03-20 at 18.00.30 (1).jpeg",
+    image: "images/WhatsApp Image 2026-04-16 at 18.11.48.jpeg",
     description: "A premium single-occupancy room located near Aurobindo Hospital. Ideal for medical professionals, nurses, and hospital staff. The room offers complete privacy and is equipped with top-quality furnishings."
   },
   {
