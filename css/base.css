@@ -1,0 +1,257 @@
+/* ============================================
+   BASE.CSS — Reset, Variables, Typography, Utilities
+   Raj PG Services
+   ============================================ */
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Lato:wght@300;400;500;700;900&display=swap');
+
+/* ─── CSS Variables ─────────────────────────── */
+:root {
+  --bg: #F4F7FB;
+  --accent: #1B3A6B;
+  --accent-dark: #122952;
+  --accent-light: #2A5298;
+  --secondary: #E8EEF7;
+  --text: #0D1B2E;
+  --text-light: #4A6080;
+  --white: #FFFFFF;
+  --border: #C8D6EC;
+  --shadow: rgba(27, 58, 107, 0.10);
+  --shadow-hover: rgba(27, 58, 107, 0.22);
+  --shadow-md: rgba(27, 58, 107, 0.15);
+  --radius: 12px;
+  --radius-sm: 6px;
+  --radius-lg: 20px;
+  --transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+  --nav-h: 70px;
+}
+
+/* ─── Reset ─────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--accent-light);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-body);
+  border: none;
+  outline: none;
+  background: none;
+}
+
+input, select, textarea {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+
+/* ─── Typography ─────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.25rem); }
+h2 { font-size: clamp(1.5rem, 3.5vw, 2.25rem); }
+h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
+h4 { font-size: 1.2rem; }
+h5 { font-size: 1.05rem; }
+h6 { font-size: 0.95rem; }
+
+p {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* ─── Utility Classes ────────────────────────── */
+.text-center { text-align: center; }
+.text-accent { color: var(--accent); }
+.text-white { color: var(--white); }
+.text-light { color: var(--text-light); }
+.font-bold { font-weight: 700; }
+.font-heading { font-family: var(--font-heading); }
+
+.d-flex { display: flex; }
+.d-grid { display: grid; }
+.align-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.flex-wrap { flex-wrap: wrap; }
+.gap-1 { gap: 0.5rem; }
+.gap-2 { gap: 1rem; }
+.gap-3 { gap: 1.5rem; }
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Star Rating */
+.stars {
+  color: #F4C542;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+/* Price tag */
+.price-tag {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+
+/* Section label / eyebrow text */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--accent-light);
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+/* Divider line */
+.divider {
+  width: 56px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+  margin: 1rem 0 1.5rem;
+}
+.divider.center {
+  margin: 1rem auto 1.5rem;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.badge-single  { background: #E8EEF7; color: #1B3A6B; border: 1px solid #C8D6EC; }
+.badge-double  { background: #EEF3FA; color: #2A5298; border: 1px solid #C8D6EC; }
+.badge-triple  { background: #E4EBF5; color: #122952; border: 1px solid #C8D6EC; }
+.badge-budget  { background: #F0F4FB; color: #4A6080; border: 1px solid #C8D6EC; }
+
+/* Available indicator */
+.available-dot {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #1a7a4a;
+}
+.available-dot::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #2ecc71;
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.3); }
+}
+
+/* Scroll-to-top button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 46px;
+  height: 46px;
+  background: var(--accent);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition);
+  box-shadow: 0 4px 16px var(--shadow-hover);
+  z-index: 999;
+  border: none;
+  font-size: 1.2rem;
+}
+#scrollTopBtn.visible {
+  opacity: 1;
+  visibility: visible;
+}
+#scrollTopBtn:hover {
+  background: var(--accent-dark);
+  transform: translateY(-2px);
+}
